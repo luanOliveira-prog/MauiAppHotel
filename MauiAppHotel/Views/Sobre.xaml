@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Gray100}">
+
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10">
+
+
+        <Frame Padding="10"
+               Margin="10"
+               BackgroundColor="{StaticResource MidnightBlue}">
+
+
+            <Label Text="Sobre o Aplicativo"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   FontFamily="UbuntuBold"
+                   FontSize="30"/>
+
+        </Frame>
+
+        <Frame Padding="10"
+               Margin="10">
+
+            <VerticalStackLayout>
+
+                <Grid RowDefinitions="Auto, Auto, Auto, Auto"
+                      ColumnDefinitions="*"
+                      RowSpacing="8">
+
+                    <Label Grid.Row="0" Grid.Column="0"   
+                           Text="Nome do Desenvolvedor:"
+                           TextColor="{StaticResource MidnightBlue}"
+                           HorizontalTextAlignment="Start"
+                           FontFamily="Ubuntu"
+                           FontSize="15"/>
+
+                    <Label Grid.Row="1" Grid.Column="0"
+                           Text="Luan Oliveira"
+                           TextColor="{StaticResource Gray500}"
+                           HorizontalTextAlignment="Start"
+                           FontFamily="Ubuntu"
+                           FontSize="15"/>
+
+                    <Label Grid.Row="2" Grid.Column="0"
+                           Text="Ano de Desenvolvimento:"
+                           TextColor="{StaticResource MidnightBlue}"
+                           HorizontalTextAlignment="Start"
+                           FontFamily="Ubuntu"
+                           FontSize="15"/>
+
+                    <Label Grid.Row="3" Grid.Column="0"
+                           Text="2024"
+                           TextColor="{StaticResource Gray500}"
+                           HorizontalTextAlignment="Start"
+                           FontFamily="Ubuntu"
+                           FontSize="15"/>
+
+                </Grid>
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+        <Frame Padding="10"
+               Margin="10">
+
+            <Grid RowDefinitions="Auto, Auto, Auto"
+                  ColumnDefinitions="*"
+                  RowSpacing="8">
+
+                <Label Grid.Row="0" Grid.Column="0"
+                       Text="Aplicativo de reservas de hotéis"
+                       TextColor="{StaticResource Gray500}"
+                       HorizontalTextAlignment="Start"
+                       FontFamily="Ubuntu"
+                       FontSize="15"/>
+
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="Versão 1.0"
+                       TextColor="{StaticResource Gray500}"
+                       HorizontalTextAlignment="Start"
+                       FontFamily="Ubuntu"
+                       FontSize="15"/>
+                
+                <Label Grid.Row="2" Grid.Column="0"
+                       Text="Todos os direitos reservados"
+                       TextColor="{StaticResource Gray500}"
+                       HorizontalTextAlignment="Start"
+                       FontFamily="Ubuntu"
+                       FontSize="15"/>
+
+            </Grid>
+
+        </Frame>
+
+        <Button Text="Voltar"
+                Margin="10"
+                BackgroundColor="{StaticResource MidnightBlue}"
+                HorizontalOptions="Center"
+                FontFamily="Ubuntu"/>
+
+
+
+    </VerticalStackLayout>
+    
+</ContentPage>
