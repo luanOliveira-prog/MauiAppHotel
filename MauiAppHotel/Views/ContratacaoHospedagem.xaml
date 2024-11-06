@@ -61,6 +61,7 @@
 
                 <Picker x:Name="pck_quarto"
                         Title="Selecione sua acomodação"
+                        ItemDisplayBinding="{Binding Descricao}"
                         FontFamily="Ubuntu"
                         FontSize="18"/>
 
@@ -77,6 +78,7 @@
                                    FontFamily="Ubuntu"
                                    FontSize="18"/>
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy"/>
 
                         </HorizontalStackLayout>
@@ -94,7 +96,7 @@
                     
                 </Frame>
 
-                <Button Text="Avançar"
+                <Button Text="Avançar" Clicked="Button_Clicked"
                         BackgroundColor="{StaticResource MidnightBlue}"
                         FontFamily="Ubuntu"
                         FontSize="20"/>
@@ -103,10 +105,7 @@
                        HorizontalTextAlignment="Center"
                        TextColor="{StaticResource MidnightBlue}"
                        Margin="10">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                    </Label.GestureRecognizers>
-                    
+
                 </Label>
 
 
