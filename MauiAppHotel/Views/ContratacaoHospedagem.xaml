@@ -21,6 +21,7 @@
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*, *, 2*">
 
+
                     <Label Grid.Row="0" Grid.Column="0"
                            Text="Adultos:"
                            FontFamily="Ubuntu"
@@ -55,9 +56,18 @@
 
                 </Grid>
 
+                <VerticalStackLayout Spacing="5">
                 <Label Text="Escolha sua Suíte"
                        FontFamily="Ubuntu"
-                       FontSize="20"/>
+                       FontSize="20" />
+
+
+                <Button Text="Acomodações" Clicked="Button_Clicked_2"
+                        BackgroundColor="{StaticResource MidnightBlue}"
+                        TextColor="White"
+                        FontFamily="Ubuntu"
+                        FontSize="20"/>
+
 
                 <Picker x:Name="pck_quarto"
                         Title="Selecione sua acomodação"
@@ -65,10 +75,13 @@
                         FontFamily="Ubuntu"
                         FontSize="18"/>
 
+                </VerticalStackLayout>
+
                 <Frame Padding="10"
                        Margin="10">
 
-                    <VerticalStackLayout>
+                    <VerticalStackLayout Spacing="5">
+
                         <Label Text="Período da Estadia"
                                FontFamily="Ubuntu"
                                FontSize="20"/>
@@ -100,13 +113,16 @@
                         BackgroundColor="{StaticResource MidnightBlue}"
                         FontFamily="Ubuntu"
                         FontSize="20"/>
+                
+                
 
-                <Label Text="Sobre"
-                       HorizontalTextAlignment="Center"
-                       TextColor="{StaticResource MidnightBlue}"
-                       Margin="10">
+                <Button Text="Sobre" Clicked="Button_Clicked_1"
+                        HorizontalOptions="Center"
+                        BackgroundColor="Transparent"
+                        TextColor="{StaticResource MidnightBlue}"
+                        Margin="10">
 
-                </Label>
+                </Button>
 
 
             </VerticalStackLayout>

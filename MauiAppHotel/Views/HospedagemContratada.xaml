@@ -19,7 +19,7 @@
             <HorizontalStackLayout>
                 <Label Text="Adultos:" />
                 <Label Text="2"
-           TextColor="{StaticResource MidnightBlue}" />
+                       TextColor="{StaticResource MidnightBlue}" />
                 
             </HorizontalStackLayout>
 

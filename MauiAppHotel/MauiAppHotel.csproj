@@ -63,6 +63,11 @@
 	  <None Remove="Resources\Fonts\Ubuntu-Bold.ttf" />
 	  <None Remove="Resources\Fonts\Ubuntu-Light.ttf" />
 	  <None Remove="Resources\Fonts\Ubuntu-Regular.ttf" />
+	  <None Remove="Resources\Images\hotel_maui.png" />
+	  <None Remove="Resources\Images\suite_crise.png" />
+	  <None Remove="Resources\Images\suite_luxo.png" />
+	  <None Remove="Resources\Images\suite_single.png" />
+	  <None Remove="Resources\Images\suite_super_luxo.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -72,6 +77,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\Acomodacoes.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ContratacaoHospedagem.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

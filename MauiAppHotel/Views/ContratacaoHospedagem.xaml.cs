@@ -42,4 +42,27 @@ public partial class ContratacaoHospedagem : ContentPage
 		dtpck_checkout.MinimumDate = data_selecionada_checkin.AddDays(1);
 		dtpck_checkout.MaximumDate = data_selecionada_checkin.AddMonths(6);
     }
+
+    private void Button_Clicked_1(object sender, EventArgs e)
+    {
+        try
+        {
+            Navigation.PushAsync(new Sobre());
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
+    }
+
+    private void Button_Clicked_2(object sender, EventArgs e)
+    {
+        try
+        {
+            Navigation.PushAsync(new Acomodacoes());
+        }catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
+    }
 }
