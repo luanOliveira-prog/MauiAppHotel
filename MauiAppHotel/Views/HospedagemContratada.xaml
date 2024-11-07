@@ -14,40 +14,50 @@
                HorizontalTextAlignment="Center"/>
 
         <Frame Margin="10">
+            
 
-            <HorizontalStackLayout>
-            <HorizontalStackLayout>
-                <Label Text="Adultos:" />
-                <Label Text="2"
-                       TextColor="{StaticResource MidnightBlue}" />
-                
+                <HorizontalStackLayout Spacing="10"
+                                       HorizontalOptions="Center">
+
+
+                    <HorizontalStackLayout>
+                        <Label Text="Adultos:" />
+                        <Label Text="2"
+                               TextColor="{StaticResource MidnightBlue}" />
+
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Crianças:" />
+                        <Label Text="1"
+                               TextColor="{StaticResource MidnightBlue}" />
+
+
+                    </HorizontalStackLayout>
+
             </HorizontalStackLayout>
 
-            <HorizontalStackLayout>
-                <Label Text="Crianças:" />
-                <Label Text="1"
-                       TextColor="{StaticResource MidnightBlue}" />
-            </HorizontalStackLayout>
-            </HorizontalStackLayout>
+            
 
         </Frame>
 
         <Frame Margin="10">
             <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="Auto, Auto">
-                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
-                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" />
-                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
+                  
+                <Label HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Text="Check-in:" />
+                <Label HorizontalOptions="Center" Grid.Row="0" Grid.Column="1" Text="Check-out:" />
+                <Label HorizontalOptions="Center" Grid.Row="0" Grid.Column="2" Text="Estadia:" />
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024" />
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024" />
-                <Label Grid.Row="1" Grid.Column="2" Text="3" />
+                <Label HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" Text="27/05/2024" />
+                <Label HorizontalOptions="Center" Grid.Row="1" Grid.Column="1" Text="30/05/2024" />
+                <Label HorizontalOptions="Center" Grid.Row="1" Grid.Column="2" Text="3" />
             </Grid>
             
         </Frame>
 
         <Frame Margin="10">
-            <HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" >
                 <Label Text="Valor Total:" />
                 <Label Text="R$ 750,00" />
 

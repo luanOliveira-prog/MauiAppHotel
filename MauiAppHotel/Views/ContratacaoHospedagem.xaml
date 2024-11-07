@@ -17,36 +17,46 @@
             TextColor="{StaticResource MidnightBlue}"/>
 
         <Frame Padding="10">
+            
             <VerticalStackLayout>
+                
                 <Grid RowDefinitions="Auto, Auto"
-                      ColumnDefinitions="*, *, 2*">
+                      ColumnDefinitions="*, *, 2*"
+                      HorizontalOptions="Center"
+                      RowSpacing="5"
+                      ColumnSpacing="5">
 
 
                     <Label Grid.Row="0" Grid.Column="0"
                            Text="Adultos:"
                            FontFamily="Ubuntu"
-                           FontSize="18"/>
+                           FontSize="18"
+                           VerticalTextAlignment="Center"/>
 
                     <Label Grid.Row="0" Grid.Column="1"
                            TextColor="{StaticResource MidnightBlue}"
                            Text="{Binding Value}"
-                           BindingContext="{x:Reference stp_adultos}"/>
+                           BindingContext="{x:Reference stp_adultos}"
+                           VerticalTextAlignment="Center" />
+                           
 
                     <Stepper Grid.Row="0" Grid.Column="2"
                              x:Name ="stp_adultos"
                              Minimum="0"
                              Maximum="10"
-                             Increment="1" />
+                             Increment="1"/>
 
                     <Label Grid.Row="1" Grid.Column="0"
                            Text="Crianças:"
                            FontFamily="Ubuntu"
-                           FontSize="18"/>
+                           FontSize="18"
+                           VerticalTextAlignment="Center"/>
 
                     <Label Grid.Row="1" Grid.Column="1"
                            TextColor="{StaticResource MidnightBlue}"
                            Text="{Binding Value}"
-                           BindingContext="{x:Reference stp_criancas}" />
+                           BindingContext="{x:Reference stp_criancas}"
+                           VerticalTextAlignment="Center"/>
 
                     <Stepper Grid.Row="1" Grid.Column="2"
                              x:Name="stp_criancas"
@@ -56,16 +66,19 @@
 
                 </Grid>
 
-                <VerticalStackLayout Spacing="5">
+                <VerticalStackLayout Spacing="5"
+                                     Margin="5">
+                    
                 <Label Text="Escolha sua Suíte"
                        FontFamily="Ubuntu"
-                       FontSize="20" />
+                       FontSize="20"
+                       HorizontalTextAlignment="Center"/>
 
 
                 <Button Text="Acomodações" Clicked="Button_Clicked_2"
                         BackgroundColor="{StaticResource MidnightBlue}"
                         TextColor="White"
-                        FontFamily="Ubuntu"
+                        FontFamily="UbuntuBold"
                         FontSize="20"/>
 
 
@@ -73,7 +86,8 @@
                         Title="Selecione sua acomodação"
                         ItemDisplayBinding="{Binding Descricao}"
                         FontFamily="Ubuntu"
-                        FontSize="18"/>
+                        FontSize="18"
+                        HorizontalOptions="Center"/>
 
                 </VerticalStackLayout>
 
@@ -81,29 +95,54 @@
                        Margin="10">
 
                     <VerticalStackLayout Spacing="5">
+                        
 
                         <Label Text="Período da Estadia"
                                FontFamily="Ubuntu"
-                               FontSize="20"/>
+                               FontSize="20"
+                               HorizontalTextAlignment="Center"/>
                         
-                        <HorizontalStackLayout>
-                            <Label Text="Check-in:"
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            
+                            <Grid RowDefinitions="Auto, Auto"
+                                  ColumnDefinitions="*, *"
+                                  RowSpacing="5"
+                                  ColumnSpacing="5">
+                                
+                            <Label Grid.Row="0" Grid.Column="0"
+                                   Text="Check-in:"
                                    FontFamily="Ubuntu"
-                                   FontSize="18"/>
-                            <DatePicker x:Name="dtpck_checkin"
+                                   FontSize="18"
+                                   VerticalTextAlignment="Center"/>
+                                
+                            <DatePicker Grid.Row="0" Grid.Column="1"
+                                        x:Name="dtpck_checkin"
                                         DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy"/>
+                            </Grid>
 
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout>
-                            <Label Text="Check-out:"
+                        <HorizontalStackLayout HorizontalOptions="Center">
+
+                            <Grid RowDefinitions="Auto, Auto"
+                                  ColumnDefinitions="*, *"
+                                  ColumnSpacing="5">
+
+                            <Label Grid.Row="1" Grid.Column="0"
+                                   Text="Check-out:"
                                    FontFamily="Ubuntu"
-                                   FontSize="18"/>
-                            <DatePicker x:Name="dtpck_checkout"
+                                   FontSize="18"
+                                   VerticalTextAlignment="Center"/>
+                                
+                            <DatePicker Grid.Row="1" Grid.Column="1"
+                                        x:Name="dtpck_checkout"
                                         Format="dd/MM/yyyy" />
 
+                            </Grid>
+
                         </HorizontalStackLayout>
+                            
                     </VerticalStackLayout>
                         
                     
@@ -111,16 +150,16 @@
 
                 <Button Text="Avançar" Clicked="Button_Clicked"
                         BackgroundColor="{StaticResource MidnightBlue}"
-                        FontFamily="Ubuntu"
+                        FontFamily="UbuntuBold"
                         FontSize="20"/>
-                
-                
+
+
 
                 <Button Text="Sobre" Clicked="Button_Clicked_1"
                         HorizontalOptions="Center"
                         BackgroundColor="Transparent"
-                        TextColor="{StaticResource MidnightBlue}"
-                        Margin="10">
+                        TextColor="{StaticResource MidnightBlue}">
+
 
                 </Button>
 

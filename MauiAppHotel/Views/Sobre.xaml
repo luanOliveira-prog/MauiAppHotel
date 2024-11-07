@@ -20,7 +20,7 @@
                    TextColor="White"
                    HorizontalTextAlignment="Center"
                    FontFamily="UbuntuBold"
-                   FontSize="30"/>
+                   FontSize="20"/>
 
         </Frame>
 
